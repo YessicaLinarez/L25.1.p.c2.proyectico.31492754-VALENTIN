@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentin</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <section id="ramoFlorform">
+        <h3>Expresalo con Amor</h3>
+        <h3>Ramo de Flor
+        <input type="text" id="ramoFlorForm_inCodigo" placeholder="codigo"></input>
+        <input type="text" id="ramoFlorForm_inEnvase" placeholder="Envase"></input>
+        <input type="text" id="ramoFlorForm_inCostoN" placeholder="Costo Neto"></input>
+        <input type="text" id="ramoFlorForm_inTipoF" placeholder="Tipo de Flor"></input>
+        <button id="ramoFlorForm_btProcesarRamoFlor">Procesar Ramo de Flor</button> 
+    </section>
+
+    <section id="ramoFrutaform">
+        <h3>Ramo de Fruta
+        <input type="text" id="ramoFrutaForm_inCodigo" placeholder="codigo"></input>
+        <input type="text" id="ramoFrutaForm_inEnvase" placeholder="Envase"></input>
+        <input type="text" id="ramoFrutaForm_inCostoN" placeholder="Costo Neto"></input>
+        <input type="text" id="ramoFrutaForm_inExtra" placeholder="Extra"></input>
+        <button id="ramoFrutaForm_btProcesarRamoFruta">Procesar Ramo de Fruta</button>
+
+    </section>
+        <div id="salida">
+        </div><br>
+
+        <table id="tablaRamoFlor">
+            <tr>
+                <th>Codigo</th>
+                <th>Envase</th>
+                <th>Costo neto</th>
+                <th>Tipo de flor</th>
+                <th>Descuento</th>
+                <th>Incremento</th>
+                <th>Precio total</th>
+            </tr>
+        </table><br>
+
+        <table id="tablaRamoFruta">
+            <tr>
+                <th>Codigo</th>
+                <th>Envase</th>
+                <th>Costo neto</th>
+                <th>Extra</th>
+                <th>Descuento</th>
+                <th>Precio total</th>
+               
+            </tr>
+        </table><br>
+    </section>
+
+</body>
+<script type="module">
+    import Cl_principal from "./js/principal.js";
+    new Cl_principal()
+</script>
+
+</html>
